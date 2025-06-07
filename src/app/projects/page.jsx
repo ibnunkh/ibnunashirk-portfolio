@@ -12,7 +12,7 @@ const ProjectsPage = () => {
             image: "/images/shoppedia.png",
             tools: "e-commerce Platform. Built using Next.js, Tailwind, Zustand and Toastify.",
             githubUrl: "https://github.com/ibnunkh/shoppedia.git",
-            liveUrl: "https://shoppedia-zeta.vercel.app/", 
+            liveUrl: "https://shoppedia-zeta.vercel.app/",
         },
         {
             title: "Videobelajar",
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
                         </h2>
                     </div>
                 </SlideFromTop>
-                
+
                 <SlideFromBottom delay={2.0}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-15 mt-10 p-6">
                         {projectData.map((project, index) => (
@@ -51,7 +51,11 @@ const ProjectsPage = () => {
                                 className="bg-gradient-to-r p-6 from-slate-900/60 to-gray-800 rounded-xl border shadow-[0.8rem_0.8rem_0px_0px_#e2e8f0] hover:shadow-[1rem_1rem_0px_0px_#8700FF] transition hover:scale-105 duration-300"
                             >
                                 <div className="relative mb-4">
-                                    <a href={project.liveUrl}>
+                                    <a
+                                        href={project.liveUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <Image
                                             src={project.image}
                                             alt={project.title}
@@ -61,13 +65,17 @@ const ProjectsPage = () => {
                                         />
                                     </a>
                                 </div>
-                                <p className="text-md md:text-lg text-purple-600 font-lato font-semibold">{project.desc}</p>
-                                <h3 className="text-xl md:text-3xl font-montserrat text-gray-200 font-bold mt-1">{project.title}</h3>
+                                <p className="text-md md:text-lg text-purple-600 font-lato font-semibold">
+                                    {project.desc}
+                                </p>
+                                <h3 className="text-xl md:text-3xl font-montserrat text-gray-200 font-bold mt-1">
+                                    {project.title}
+                                </h3>
                                 {project.tools && (
                                     <p className="text-gray-300 mt-2">{project.tools}</p>
                                 )}
                                 <div className="flex items-center justify-between mt-4">
-                                    <a 
+                                    <a
                                         href={project.liveUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -75,7 +83,7 @@ const ProjectsPage = () => {
                                     >
                                         Live Demo
                                     </a>
-                                    <a 
+                                    <a
                                         href={project.githubUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -90,7 +98,7 @@ const ProjectsPage = () => {
                 </SlideFromBottom>
             </section>
         </Layout>
-    )
+    );
 }
 
 export default ProjectsPage
