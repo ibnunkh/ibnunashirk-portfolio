@@ -39,15 +39,6 @@ const AboutPage = () => {
 
             <section className="relative py-12 md:py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-800 to-slate-900 overflow-hidden">
                 <ScrollFadeIn>
-                    <div className="absolute inset-0">
-                        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-                        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-cyan-500/5 rounded-full blur-3xl animate-pulse delay-500"></div>
-                    </div>
-                    <div className="absolute inset-0 opacity-20">
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent h-px animate-pulse"></div>
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/20 to-transparent w-px animate-pulse delay-700"></div>
-                    </div>
                     <EducationItem />
                 </ScrollFadeIn>
             </section>

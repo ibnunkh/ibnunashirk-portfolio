@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-export const SlideFromTop = ({ children, delay = 0, duration = 1.2 }) => {
+export const SlideFromTop = ({ children, delay = 0, duration = 0.8 }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -21,7 +21,7 @@ export const SlideFromTop = ({ children, delay = 0, duration = 1.2 }) => {
     );
 };
 
-export const SlideFromBottom = ({ children, delay = 0, duration = 1.2 }) => {
+export const SlideFromBottom = ({ children, delay = 0, duration = 0.8 }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 

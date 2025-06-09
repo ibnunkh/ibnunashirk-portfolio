@@ -22,7 +22,7 @@ const TransitionOverlay = ({ onComplete }) => {
                 style={{ backgroundColor: "#0081FB" }}
                 initial={{ y: "-100%" }}
                 animate={{ y: isExiting ? "100%" : "0%" }}
-                exit={{ y: "100%" }}
+                exit={{ y: "-100%" }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 onAnimationComplete={() => {
                     if (isExiting && onComplete) {
@@ -33,9 +33,9 @@ const TransitionOverlay = ({ onComplete }) => {
             <motion.div
                 className="fixed top-0 left-0 w-full h-full z-[9998]"
                 style={{ backgroundColor: "#87CEFA" }}
-                initial={{ y: "-100%" }}
-                animate={{ y: isExiting ? "100%" : "0%" }}
-                exit={{ y: "100%" }}
+                // initial={{ y: "0%" }}
+                // animate={{ y: isExiting ? "100%" : "0%" }}
+                exit={{ y: "-100%" }}
                 transition={{
                     duration: 1.0,
                     ease: "easeInOut",
@@ -45,9 +45,9 @@ const TransitionOverlay = ({ onComplete }) => {
             <motion.div
                 className="fixed top-0 left-0 w-full h-full z-[9997]"
                 style={{ backgroundColor: "#ffffff" }}
-                initial={{ y: "-100%" }}
-                animate={{ y: isExiting ? "100%" : "0%" }}
-                exit={{ y: "100%" }}
+                // initial={{ y: "0%" }}
+                // animate={{ y: isExiting ? "100%" : "0%" }}
+                exit={{ y: "-100%" }}
                 transition={{
                     duration: 1.5,
                     ease: "easeInOut",
