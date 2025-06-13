@@ -7,37 +7,31 @@ const SkillsSection = () => {
             name: "HTML",
             icon: "/icons/html5-brands.svg",
             level: "Expert",
-            percentage: 90,
         },
         {
             name: "CSS",
             icon: "/icons/css3-alt-brands.svg",
             level: "Expert",
-            percentage: 90,
         },
         {
             name: "JavaScript",
             icon: "/icons/js-brands.svg",
             level: "Advanced",
-            percentage: 88,
         },
         {
             name: "React",
             icon: "/icons/react-brands.svg",
             level: "Intermediate",
-            percentage: 82,
         },
         {
             name: "Next.js",
             icon: "/icons/Next.js.svg",
             level: "Intermediate",
-            percentage: 80,
         },
         {
             name: "Tailwind CSS",
             icon: "/icons/Tailwind CSS.svg",
             level: "Intermediate",
-            percentage: 80,
         },
     ];
 
@@ -54,13 +48,11 @@ const SkillsSection = () => {
                             Mastering cutting-edge technologies to build exceptional digital experiences
                         </p>
                     </div>
-
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-6 md:p-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 p-6 md:p-10">
                         {skillsData.map((skill, index) => (
                             <div key={index} className="group relative">
                                 <div className="relative bg-slate-800/90 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 md:p-6 transform group-hover:scale-105 transition-all duration-500 h-full">
-                                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-transparent rounded-bl-3xl rounded-tr-3xl"></div>
 
                                     <div className="relative mb-6">
                                         <div className="w-20 h-20 md:w-40 md:h-40 mx-auto bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center transition-all duration-500">
@@ -79,8 +71,6 @@ const SkillsSection = () => {
                                         <p className="text-sm md:text-lg font-lato font-semibold text-gray-300">{skill.level}</p>
                                     </div>
 
-                                    <div className="absolute -z-10 top-4 right-4 w-16 h-16 bg-blue-500/5 rounded-full blur-xl animate-pulse delay-300"></div>
-                                    <div className="absolute -z-10 bottom-4 left-4 w-12 h-12 bg-purple-500/5 rounded-full blur-xl animate-pulse delay-700"></div>
                                 </div>
                             </div>
                         ))}
